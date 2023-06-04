@@ -14,7 +14,7 @@ module.exports = {
    * your application gets started.
    *
    * This gives you an opportunity  set up yata model,
-   * run jobs, or perform somspecial logic.
+   * run jobs, or perform somspecial lo
    */
   bootstrap(/*{ strapi }*/) {},
 };
