@@ -13,7 +13,7 @@ module.exports = {
    * An asynchronous bootstrap function that runs before
    * your application gets started.
    *
-   * This gives you an opportunity to set up your data model,
+   * This gives you an opportunity  set up your data model,
    * run jobs, or perform somspecial logic.
    */
   bootstrap(/*{ strapi }*/) {},
