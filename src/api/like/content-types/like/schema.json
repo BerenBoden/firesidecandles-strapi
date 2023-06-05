@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "posts": {
+    "post": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::post.post",
       "inversedBy": "likes"
     },
-    "users": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",

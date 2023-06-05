@@ -35,17 +35,23 @@
       "target": "api::comment.comment",
       "mappedBy": "posts"
     },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "posts"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "posts"
+    },
     "likes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::like.like",
-      "mappedBy": "posts"
-    },
-    "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "post"
+      "mappedBy": "post"
     }
   }
 }

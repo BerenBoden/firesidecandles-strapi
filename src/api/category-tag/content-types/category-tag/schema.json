@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_tags",
+  "info": {
+    "singularName": "category-tag",
+    "pluralName": "category-tags",
+    "displayName": "CategoryTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category_tag": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "href": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "category_tags"
+    }
+  }
+}

@@ -66,21 +66,27 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "likes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::like.like",
-      "mappedBy": "users"
-    },
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "users"
     },
-    "post": {
+    "review": {
       "type": "relation",
       "relation": "oneToOne",
+      "target": "api::review.review",
+      "mappedBy": "user"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like.like",
+      "mappedBy": "user"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "author"
     }
