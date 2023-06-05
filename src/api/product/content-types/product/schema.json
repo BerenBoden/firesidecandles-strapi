@@ -21,29 +21,35 @@
       "type": "richtext",
       "required": true
     },
-    "slug": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "price": {
       "type": "decimal"
     },
     "cover": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "cover_images": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "cover_images": {
       "type": "media",
       "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
       "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "products"
     }
   }
 }

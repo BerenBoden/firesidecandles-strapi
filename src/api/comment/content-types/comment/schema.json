@@ -4,7 +4,8 @@
   "info": {
     "singularName": "comment",
     "pluralName": "comments",
-    "displayName": "Comment"
+    "displayName": "Comment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,10 @@
       "relation": "manyToOne",
       "target": "api::post.post",
       "inversedBy": "comments"
+    },
+    "content": {
+      "type": "text",
+      "required": true
     }
   }
 }
