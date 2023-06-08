@@ -12,12 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "href": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "category": {
+    "name": {
       "type": "string"
     },
     "posts": {
@@ -37,6 +32,10 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "inversedBy": "categories"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
