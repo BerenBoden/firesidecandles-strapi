@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": true
@@ -25,7 +25,13 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "title"
+    },
+    "feature": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feature.feature",
+      "mappedBy": "category_tag"
     }
   }
 }

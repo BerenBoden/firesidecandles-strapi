@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
     "posts": {
@@ -35,7 +35,13 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "title"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "categories"
     }
   }
 }
