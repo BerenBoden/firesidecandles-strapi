@@ -11,6 +11,14 @@ module.exports = ({ env }) => ({
       actionOptions: {
         upload: {},
         delete: {},
+        read: {
+          fetch_format: "auto",
+          quality: "auto",
+          secure: true,
+          width: 800,
+          height: 800,
+          crop: "fill",
+        },
       },
     },
   },
