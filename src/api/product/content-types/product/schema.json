@@ -50,6 +50,11 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "products"
+    },
+    "meta_data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-data.seo"
     }
   }
 }

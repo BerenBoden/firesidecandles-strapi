@@ -52,6 +52,11 @@
       "relation": "oneToMany",
       "target": "api::like.like",
       "mappedBy": "post"
+    },
+    "meta_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.seo"
     }
   }
 }

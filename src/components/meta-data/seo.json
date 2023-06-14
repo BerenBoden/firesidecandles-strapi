@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_meta_data_seos",
+  "info": {
+    "displayName": "SEO",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "meta_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "meta_description": {
+      "type": "text",
+      "required": true
+    },
+    "meta_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "indexed": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
