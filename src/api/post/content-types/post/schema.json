@@ -56,7 +56,7 @@
     "meta_data": {
       "type": "component",
       "repeatable": false,
-      "component": "meta-data.seo"
+      "component": "seo.meta-data"
     }
   }
 }

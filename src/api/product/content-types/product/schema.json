@@ -24,15 +24,7 @@
     "price": {
       "type": "decimal"
     },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "cover_images": {
+    "covers": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -54,7 +46,7 @@
     "meta_data": {
       "type": "component",
       "repeatable": false,
-      "component": "meta-data.seo"
+      "component": "seo.meta-data"
     }
   }
 }

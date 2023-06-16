@@ -4,17 +4,28 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "SEO": {
+    "meta_data": {
       "type": "component",
       "repeatable": false,
-      "component": "meta-data.seo"
+      "component": "seo.meta-data"
+    },
+    "featured_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    },
+    "featured_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   }
 }

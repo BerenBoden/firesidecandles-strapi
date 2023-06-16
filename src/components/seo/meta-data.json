@@ -1,29 +1,28 @@
 {
-  "collectionName": "components_meta_data_seos",
+  "collectionName": "components_seo_meta_data",
   "info": {
-    "displayName": "SEO",
+    "displayName": "MetaData",
     "description": ""
   },
   "options": {},
   "attributes": {
     "meta_title": {
-      "type": "string",
+      "type": "text",
       "required": true,
+      "unique": true,
       "maxLength": 60
     },
     "meta_description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 120
     },
-    "meta_image": {
+    "og_image": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "indexed": {
