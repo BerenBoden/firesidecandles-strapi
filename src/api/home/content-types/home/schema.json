@@ -26,6 +26,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product"
+    },
+    "call_to_action": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.call-to-action"
     }
   }
 }

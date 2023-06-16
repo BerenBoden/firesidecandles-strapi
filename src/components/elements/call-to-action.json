@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_elements_call_to_actions",
+  "info": {
+    "displayName": "CallToAction"
+  },
+  "options": {},
+  "attributes": {
+    "short_heading": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "large_heading": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "short_description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "button_text": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
