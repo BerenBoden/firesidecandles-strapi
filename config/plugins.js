@@ -1,5 +1,14 @@
 module.exports = ({ env }) => ({
-  // ...
+  "users-permissions": {
+    enabled: true,
+    config: {
+      jwt: {
+        expiresIn: "15m",
+      },
+      ratelimit: { interval: 60000, max: 5000 },
+    },
+  },
+
   upload: {
     config: {
       provider: "cloudinary",
