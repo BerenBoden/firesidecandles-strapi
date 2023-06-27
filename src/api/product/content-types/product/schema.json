@@ -47,6 +47,15 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.meta-data"
+    },
+    "cart": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cart.cart",
+      "inversedBy": "products"
+    },
+    "stock": {
+      "type": "biginteger"
     }
   }
 }

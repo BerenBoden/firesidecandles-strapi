@@ -123,6 +123,7 @@ module.exports = (plugin) => {
       return ctx.send({
         jwt: getService("jwt").issue({ id: user.id }),
         user: await sanitizeUser(user, ctx),
+        refreshToken: issueRefreshToken({ id: user.id }),
       });
     }
     // Connect the user with a third-party provider.
@@ -142,7 +143,7 @@ module.exports = (plugin) => {
       name: "users-permissions",
     });
     const { refreshToken } = ctx.request.body;
-    const refreshCookie = ctx.cookies.get("refreshToken");
+    let refreshCookie = ctx.cookies.get("refreshToken");
 
     if (!refreshCookie && !refreshToken) {
       return ctx.badRequest("No Authorization");
