@@ -57,11 +57,11 @@
     "stock": {
       "type": "biginteger"
     },
-    "order": {
+    "orders": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::order.order",
-      "inversedBy": "products"
+      "mappedBy": "products"
     }
   }
 }
