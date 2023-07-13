@@ -3,10 +3,10 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       jwt: {
-        expiresIn: "10s",
+        expiresIn: env("JWT_SECRET_EXPIRES"),
       },
       refreshToken: {
-        expiresIn: "15m",
+        expiresIn: env("REFRESH_TOKEN_EXPIRES"),
       },
       ratelimit: { interval: 60000, max: 5000 },
     },
