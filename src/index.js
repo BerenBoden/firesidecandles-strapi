@@ -9,12 +9,5 @@ module.exports = {
    */
   register(/*{ strapi }*/) {},
 
-  /**
-   * An asynchronous bootstrap function that runs before
-   * your application gets started.
-   *
-   * This gives you an opportunity  set up yata model,
-   * run jobs, or perform somspecial lo
-   */
   bootstrap(/*{ strapi }*/) {},
 };
